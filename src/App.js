@@ -1,11 +1,12 @@
-import Welcome from './welcome';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import EmailForm from './welcome'; // Adjust the path as necessary
 
-function App() {
-    return (
-        <div className="App">
-            <Welcome name="GitHub Copilot" />
-        </div>
-    );
-}
+const App = () => (
+  <div>
+    <h1>Welcome to the Email Form</h1>
+    <EmailForm />
+  </div>
+);
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
