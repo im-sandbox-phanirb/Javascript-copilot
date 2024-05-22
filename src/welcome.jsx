@@ -9,23 +9,20 @@ class EmailForm extends React.Component {
     };
   }
 
-  validateEmail = (email) => {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  };
-
   handleInputChange = (event) => {
     this.setState({ email: event.target.value });
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const isValid = this.validateEmail(this.state.email);
-    if (this.state.email === '') {
+    const { email } = this.state;
+    const isValid = this.validateEmail(email);
+
+    if (email === '') {
       this.setState({ emailError: 'Email is required' });
-    } else if (this.state.email.length < 5) {
+    } else if (email.length < 10) {
       this.setState({ emailError: 'Email is too short' });
-    } else if (this.state.email.length > 50) {
+    } else if (email.length > 50) {
       this.setState({ emailError: 'Email is too long' });
     } else if (!isValid) {
       this.setState({ emailError: 'Email is invalid' });
@@ -33,6 +30,11 @@ class EmailForm extends React.Component {
       this.setState({ emailError: '' });
       // process form
     }
+  };
+
+  validateEmail = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(email);
   };
 
   render() {
