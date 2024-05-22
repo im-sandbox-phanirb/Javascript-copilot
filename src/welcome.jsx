@@ -23,6 +23,10 @@ class EmailForm extends React.Component {
     const isValid = this.validateEmail(this.state.email);
     if (this.state.email === '') {
       this.setState({ emailError: 'Email is required' });
+    } else if (this.state.email.length < 5) {
+      this.setState({ emailError: 'Email is too short' });
+    } else if (this.state.email.length > 50) {
+      this.setState({ emailError: 'Email is too long' });
     } else if (!isValid) {
       this.setState({ emailError: 'Email is invalid' });
     } else {
