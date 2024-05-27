@@ -1,6 +1,6 @@
 # Copilot Calculator Demo
 
-A small demo project to exercise the basic capabilities of Copilot in ***Visual Studio Code***. In this demo you should refine JavaScript coding a Node based calculator Module that you can access from the UI via an `index.js` entry-point. We use copilot/chat to help in refining JavaScript coding the `calculator.js`, `index,js` and some Node packaging settings. Enjoy !
+A small demo project to exercise the basic capabilities of Copilot in ***Visual Studio Code***. In this demo you should refine JavaScript coding a Node based calculator Module that you can access from the UI via an `calculator.js` entry-point. We use copilot/chat to help in refining JavaScript coding the `calculator.js`, `index,js` and some Node packaging settings. Enjoy !
 
 >Note: The demo/workshop uses **Copilot** & **Copilot Chat** features to complete the solution.
 
@@ -14,7 +14,7 @@ A small demo project to exercise the basic capabilities of Copilot in ***Visual 
 
 ----
 
-## 1. Write the `calculator.js` file.
+## 1. Refine the `calculator.js` file.
 
 ### 1.1 Run the `calculator.js` file in port 4000.
 
