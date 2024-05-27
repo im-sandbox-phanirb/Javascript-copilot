@@ -60,22 +60,16 @@ app.post('/calculate', (req, res) => {
             calculator.subtract(number1);
             calculator.subtract(number2);
             output = calculator.result;
-            // calculator.add(number1);
-            // output = calculator.subtract(number2);
             break;
         case 'multiply':
             calculator.multiply(number1);
             calculator.multiply(number2);
             output = calculator.result;
-            // calculator.add(number1);
-            // output = calculator.multiply(number2);
             break;
         case 'divide':
             calculator.divide(number1);
             calculator.divide(number2);
             output = calculator.result;
-            // calculator.add(number1);
-            // output = calculator.divide(number2);
             break;
         default:
             output = 'Invalid operation';
