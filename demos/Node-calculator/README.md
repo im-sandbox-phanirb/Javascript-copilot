@@ -22,11 +22,17 @@ Open the treminal.
 
 Run
 
-`cd demos/Node-calculator`
+```
+cd demos/Node-calculator
+```
 
-`Open the claculator.js and change the port number`
+```
+Open the claculator.js and change the port number
+```
 
-`node calculator.js`
+```
+node calculator.js
+```
 
 ```
 Open http://localhost:4000/
