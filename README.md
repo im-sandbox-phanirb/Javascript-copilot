@@ -20,4 +20,4 @@ Both contain the necessary steps to complete the exercise.
 | --- | --- |
 | [Lab-1: Simple Javascript Calculator](demos/Javascript-calculator) | A simple calculator that adds two numbers together |
 | [Lab-2: Node Calculator](demos/Node-calculator) | A simple calculator using NodeJS |
-| [Lab-3: NodeJS app using Bootstrap](demos/NodeJS) | A NodeJS webapp that calculator commands |
+| [Lab-3: NodeJS app using Bootstrap](demos/Command-Execution-WebApp-NodeJS) | A NodeJS webapp that calculator commands |
