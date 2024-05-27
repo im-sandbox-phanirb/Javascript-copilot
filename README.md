@@ -19,5 +19,5 @@ Both contain the necessary steps to complete the exercise.
 | Demo | Description |
 | --- | --- |
 | [Lab-1: Simple Javascript Calculator](demos/Javascript-calculator) | A simple calculator that adds two numbers together |
-| [Lab-2: Node Calculator](demos/Node-calculator) | A simple calculator that adds two numbers together |
-| [NodeJS app that runs shell commands](demos/Command-Execution-WebApp-NodeJS) | A NodeJS webapp that runs shell commands |
+| [Lab-2: Node Calculator](demos/Node-calculator) | A simple calculator using NodeJS |
+| [Lab-3: NodeJS app using Bootstrap](demos/NodeJS) | A NodeJS webapp that calculator commands |
