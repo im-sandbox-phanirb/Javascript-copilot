@@ -1,4 +1,4 @@
-# How to build a fun NodeJS application that executes shell commands in a browser
+# How to Add new function to Node.js as wll as Index.html.
 
 A small demo project to exercise the basic capabilities of Copilot in ***Visual Studio Code***. In this demo you should refine JavaScript coding a Node based calculator Module that you can access from the UI as well as with CLI via an `claculator.js` entry-point. We use copilot/chat to help in refining JavaScript coding the `calculator.js`, `index,js` and some Node packaging settings. Enjoy !
 
@@ -18,6 +18,11 @@ Please follow the instruction below.
 
 Make sure that you met all prerequisites are met :) 
 
+Open the demos/Command-Execution-WebApp-NodeJS folder.
+
+All required to be made to calculator.js & index.html in demos/Command-Execution-WebApp-NodeJS folder only
+
+Change the folder to 
 ### Step 2: Open Visual Studio Code with GitHub Copilot Chat
 
 Open Visual Studio Code and also your GitHub Copilot Chat. You can open GitHub Copilot Chat by clicking on the GitHub Copilot Chat icon on the left side of VS Code. If you do not see the icon, you can open it by clicking on the `View` menu, then `Command Palette...`, then type `GitHub Copilot Chat` and select it.
@@ -29,7 +34,11 @@ Open Visual Studio Code and also your GitHub Copilot Chat. You can open GitHub C
 
 Let's start with a very simple step to create a NodeJS project. Open your GitHub Copilot Chat and type this command:
 
-`Make changes in code so that it should run in CLI as well as in UI using yargs if and else condition`
+Open the calculator.js in demos/Command-Execution-WebApp-NodeJS folder.
+
+```
+Make changes in code so that it should run in CLI as well as in UI using yargs if and else condition
+```
 
   <details><summary>Output</summary> <p>
 
