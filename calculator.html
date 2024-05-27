@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <input id="result" type="text" readonly>
+    <br/>
+    <button class="button" onclick="appendNumber('1')">1</button>
+    <button class="button" onclick="appendNumber('2')">2</button>
+    <button class="button" onclick="appendNumber('3')">3</button>
+    <button class="button" onclick="performOperation('+')">+</button>
+    <br/>
+    <button class="button" onclick="appendNumber('4')">4</button>
+    <button class="button" onclick="appendNumber('5')">5</button>
+    <button class="button" onclick="appendNumber('6')">6</button>
+    <button class="button" onclick="performOperation('-')">-</button>
+    <br/>
+    <button class="button" onclick="appendNumber('7')">7</button>
+    <button class="button" onclick="appendNumber('8')">8</button>
+    <button class="button" onclick="appendNumber('9')">9</button>
+    <button class="button" onclick="performOperation('*')">*</button>
+    <br/>
+    <button class="button" onclick="appendNumber('0')">0</button>
+    <button class="button" onclick="clearInput()">C</button>
+    <button class="button" onclick="calculateResult()">=</button>
+    <button class="button" onclick="performOperation('/')">/</button>
+    <script>
+        let currentInput = '';
+        let currentOperation = null;
+        let previousInput = '';
+
+        function appendNumber(number) {
+            currentInput = currentInput.toString() + number.toString();
+            updateDisplay();
+        }
+
+        function clearInput() {
+            currentInput = '';
+            previousInput = '';
+            currentOperation = null;
+            updateDisplay();
+        }
+
+        function performOperation(operation) {
+            if (currentInput === '') return;
+            if (previousInput !== '') {
+                calculateResult();
+            }
+            currentOperation = operation;
+            previousInput = currentInput;
+            currentInput = '';
+        }
+
+        function calculateResult() {
+            let result;
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+            if (isNaN(prev) || isNaN(current)) return;
+            switch (currentOperation) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    result = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            currentInput = result;
+            currentOperation = null;
+            previousInput = '';
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            document.getElementById('result').value = currentInput;
+        }
+    </script>
+</body>
+</html>
