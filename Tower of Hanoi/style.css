@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.tower {
+    height: 300px;
+    width: 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 50px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.disk {
+    width: 30px;
+    height: 20px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+#disk1 {
+    background-color: red;
+    width: 60px;
+}
+
+#disk2 {
+    background-color: green;
+    width: 80px;
+}
+
+#disk3 {
+    background-color: blue;
+    width: 100px;
+}
+.info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: red;
+}
